@@ -4,7 +4,7 @@ import React from 'react'
 import { bindActionCreators } from '../my-redux'
 import { connect } from '../my-react-redux'
 
-const mapStateToProps = state => ({num: state})
+const mapStateToProps = state => ({num: state.countReducer})
 // const mapDispatchToProps = {
 //     add: () => ({ type: 'ADD' }),
 //     minus: () => ({ type: 'MINUS' }),
@@ -45,7 +45,7 @@ export default connect(
     mapDispatchToProps
 )(class ReactReduxPage extends React.Component {
     render() {
-        const { num, add, minus, asyAdd } = this.props;
+        const { num, add, minus, asyAdd } = this.props; 
         console.log(this.props)
         return (
             <div>

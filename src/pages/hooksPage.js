@@ -1,5 +1,5 @@
 import React, { useReducer, useLayoutEffect, useEffect } from 'react'
-import countReducer from '../store/ruducer'
+import { countReducer } from '../store/ruducer'
 
 const init = initArg => +initArg
 

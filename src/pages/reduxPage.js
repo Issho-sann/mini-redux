@@ -24,7 +24,7 @@ export default class ReduxPage extends React.Component {
         return (
             <>
                 <h3>ReduxPage</h3>
-                <p>{store.getState()}</p>
+                <p>{store.getState().countReducer}</p>
                 <button onClick={this.add}>add</button>
                 <button onClick={this.minus}>minus</button>
                 <button onClick={this.asyAdd}>asyAdd</button>
