@@ -3,6 +3,7 @@ import React from 'react';
 import ReduxPage from './pages/reduxPage'
 import HooksPage from './pages/hooksPage'
 import ReactReduxPage from './pages/reactReduxPage'
+import ReactReduxHookPage from './pages/reactReduxHookPage'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ReduxPage/>
       <HooksPage/>
       <ReactReduxPage/>
+      <ReactReduxHookPage/>
     </div>
   );
 }
